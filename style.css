@@ -1,6 +1,3 @@
-/* Optional font upgrade (include <link> in HTML) */
-/* body font can stay as Segoe UI if you prefer that style */
-
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #fff8f2;
@@ -87,18 +84,45 @@ body.scrolled nav {
 
 section {
   padding: 2em;
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
 }
 
+/* Treat section grid structure */
+.treat-category {
+  margin-bottom: 2.5em;
+}
+
+.treat-category h3 {
+  font-size: 1.6em;
+  margin-bottom: 1em;
+  color: #a0522d;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Individual item cards */
 .item {
   background-color: #fff2e6;
   border-radius: 10px;
   padding: 1em;
-  margin-bottom: 1em;
   display: flex;
-  gap: 1em;
-  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
+  transition: transform 0.2s ease;
+}
+
+.item:hover {
+  transform: translateY(-3px);
+}
+
+.item h4 {
+  margin: 0.2em 0;
+  font-weight: bold;
 }
 
 .treat-img {
@@ -108,15 +132,11 @@ section {
   object-fit: cover;
 }
 
-#featured h3 {
-  margin-top: 2em;
-  font-size: 1.6em;
-  color: #a0522d;
-}
-
-#featured h4 {
-  margin: 0.2em 0;
-  font-weight: bold;
+/* Featured section title */
+#featured h2 {
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  color: #5a3e36;
 }
 
 /* Button enhancements */
