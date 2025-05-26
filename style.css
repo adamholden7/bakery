@@ -63,23 +63,43 @@ body.scrolled nav {
   text-decoration: underline;
 }
 
-.hero {
-  background-color: #a0897e;
-  color: white;
-  height: 300px;
+.hero-banner {
+  position: relative;
+  background-image: url('images/hero-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero-overlay {
+  background-color: rgba(90, 62, 54, 0.5); /* warm brown overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  position: relative;
   text-align: center;
+  color: #fff8f2;
+  z-index: 1;
 }
 
-.hero-text h1 {
-  font-size: 3em;
-  margin-bottom: 0.3em;
+.hero-content h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
 }
 
-.hero-text p {
-  font-size: 1.4em;
+.hero-content p {
+  font-size: 1.5em;
 }
 
 section {
