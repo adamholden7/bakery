@@ -23,81 +23,88 @@
   </nav>
 
   <header class="hero-banner">
-  <div class="hero-overlay">
-    <div class="hero-content">
-      <h1>Welcome to Sweet Crumbs</h1>
-      <p>Where every batch is made with love</p>
-    </div>
-  </div>
-</header>
-
-<section id="featured" class="fade-in">
-  <h2>Our Featured Treats</h2>
-
-  <div class="featured-wrapper">
-    <div class="featured-left">
-      <!-- Treat categories -->
-      <div class="treat-category">
-        <h3>Cookies</h3>
-        <div class="grid">
-          <div class="item">
-            <h4>Chocolate Chip Cookies</h4>
-            <p>Freshly baked daily with rich Belgian chocolate.</p>
-          </div>
-          <div class="item">
-            <h4>Oatmeal Raisin Cookies</h4>
-            <p>Classic and chewy with plump raisins and a hint of cinnamon.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="treat-category">
-        <h3>Muffins</h3>
-        <div class="grid">
-          <div class="item">
-            <h4>Blueberry Muffins</h4>
-            <p>Bursts of fresh blueberries in every bite.</p>
-          </div>
-          <div class="item">
-            <h4>Banana Nut Muffins</h4>
-            <p>Moist banana muffins with crunchy walnuts.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="treat-category">
-        <h3>Breads</h3>
-        <div class="grid">
-          <div class="item">
-            <h4>Classic Sourdough</h4>
-            <p>Artisan-style sourdough with a crisp crust.</p>
-          </div>
-          <div class="item">
-            <h4>Zucchini Bread</h4>
-            <p>Soft, spiced, and just sweet enough.</p>
-          </div>
-        </div>
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Welcome to Sweet Crumbs</h1>
+        <p>Where every batch is made with love</p>
       </div>
     </div>
+  </header>
 
-    <aside class="news-panel">
-      <h3>Bakery News</h3>
-      <ul>
-        <li><strong>June 8:</strong> Free Cookie Friday 🍪</li>
-        <li><strong>June 12:</strong> Muffin Making Workshop</li>
-        <li><strong>Now Available:</strong> Gluten-Free Lemon Loaf</li>
-        <li><strong>Coming Soon:</strong> Local Farmer's Market Stand</li>
-      </ul>
-    </aside>
-  </div>
-</section>
+  <!-- Scroll-down cue -->
+  <a href="#featured" class="scroll-down">↓ Scroll</a>
 
+  <section id="featured" class="fade-in">
+    <h2>Our Featured Treats</h2>
+
+    <div class="featured-wrapper">
+      <div class="featured-left">
+        <!-- Treat categories -->
+        <div class="treat-category">
+          <h3>Cookies</h3>
+          <div class="grid">
+            <div class="item">
+              <h4>Chocolate Chip Cookies</h4>
+              <p>Freshly baked daily with rich Belgian chocolate.</p>
+            </div>
+            <div class="item">
+              <h4>Oatmeal Raisin Cookies</h4>
+              <p>Classic and chewy with plump raisins and a hint of cinnamon.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="treat-category">
+          <h3>Muffins</h3>
+          <div class="grid">
+            <div class="item">
+              <h4>Blueberry Muffins</h4>
+              <p>Bursts of fresh blueberries in every bite.</p>
+            </div>
+            <div class="item">
+              <h4>Banana Nut Muffins</h4>
+              <p>Moist banana muffins with crunchy walnuts.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="treat-category">
+          <h3>Breads</h3>
+          <div class="grid">
+            <div class="item">
+              <h4>Classic Sourdough</h4>
+              <p>Artisan-style sourdough with a crisp crust.</p>
+            </div>
+            <div class="item">
+              <h4>Zucchini Bread</h4>
+              <p>Soft, spiced, and just sweet enough.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="news-panel">
+        <h3>Bakery News</h3>
+        <ul>
+          <li><strong>June 8:</strong> Free Cookie Friday 🍪</li>
+          <li><strong>June 12:</strong> Muffin Making Workshop</li>
+          <li><strong>Now Available:</strong> Gluten-Free Lemon Loaf</li>
+          <li><strong>Coming Soon:</strong> Local Farmer's Market Stand</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 Sweet Crumbs Bakery</p>
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    // Scroll shadow effect
+    window.addEventListener("scroll", function () {
+      document.body.classList.toggle("scrolled", window.scrollY > 10);
+    });
+  </script>
 </body>
 </html>
-
