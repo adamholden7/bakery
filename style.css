@@ -202,3 +202,52 @@ footer ul.footer-links a {
   color: #5a3e36;
   font-weight: 600;
 }
+
+.featured-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2em;
+  align-items: start;
+}
+
+.featured-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* News side panel */
+.news-panel {
+  background-color: #fff2e6;
+  border-radius: 10px;
+  padding: 1.5em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.news-panel h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #a0522d;
+}
+
+.news-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0 0;
+}
+
+.news-panel li {
+  margin-bottom: 1em;
+  font-size: 0.95em;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .featured-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .news-panel {
+    margin-top: 2em;
+  }
+}
