@@ -1,3 +1,6 @@
+/* Optional font upgrade (include <link> in HTML) */
+/* body font can stay as Segoe UI if you prefer that style */
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #fff8f2;
@@ -9,7 +12,14 @@ body {
 nav {
   background-color: #fddbb0;
   padding: 1em 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+body.scrolled nav {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -86,8 +96,30 @@ section {
   border-radius: 10px;
   padding: 1em;
   margin-bottom: 1em;
+  display: flex;
+  gap: 1em;
+  align-items: center;
 }
 
+.treat-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#featured h3 {
+  margin-top: 2em;
+  font-size: 1.6em;
+  color: #a0522d;
+}
+
+#featured h4 {
+  margin: 0.2em 0;
+  font-weight: bold;
+}
+
+/* Button enhancements */
 button {
   background-color: #d2691e;
   color: white;
@@ -96,10 +128,12 @@ button {
   border-radius: 8px;
   font-size: 1em;
   cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #a0522d;
+  transform: translateY(-2px);
 }
 
 form {
@@ -114,9 +148,37 @@ input, textarea {
   border-radius: 6px;
 }
 
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 footer {
   text-align: center;
   background-color: #fddbb0;
   padding: 1em;
 }
 
+footer ul.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5em;
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+}
+
+footer ul.footer-links a {
+  text-decoration: none;
+  color: #5a3e36;
+  font-weight: 600;
+}
