@@ -50,6 +50,30 @@ nav a.cart {
   justify-content: flex-start;
   padding: 0 5%;
 }
+
+.hero-card {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  max-width: 1000px;
+  margin-left: 5%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image-square {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 .overlay {
   position: absolute;
   top: 0;
