@@ -160,11 +160,12 @@ nav a.cart {
 }
 .menu-category h3 {
   font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
 }
 .menu-items {
   display: flex;
   gap: 2rem;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
   justify-content: space-between;
 }
