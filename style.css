@@ -43,12 +43,22 @@ nav a.cart {
 /* Hero Section */
 .hero {
   position: relative;
-  background: url('https://images.unsplash.com/photo-1588167101558-4e8f7c7094ae?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+  background-color: #eaeaea;
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 0 5%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 .hero-card {
@@ -57,7 +67,7 @@ nav a.cart {
   display: flex;
   align-items: center;
   gap: 2rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.06);
   padding: 2rem;
   border-radius: 12px;
   backdrop-filter: blur(6px);
@@ -74,25 +84,16 @@ nav a.cart {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.3);
-  z-index: 1;
-}
 .hero-text {
   position: relative;
   z-index: 2;
   max-width: 600px;
-  color: #fff;
+  color: #3e3b2e;
 }
 .hero-text .subtitle {
   font-size: 1rem;
   margin-bottom: 1rem;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 .hero-text h1 {
   font-size: 3rem;
@@ -114,15 +115,15 @@ nav a.cart {
 }
 .btn.outline {
   background: transparent;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid #6b8f71;
+  color: #6b8f71;
 }
 .btn:hover {
   background-color: #587a5f;
 }
 .btn.outline:hover {
-  background-color: white;
-  color: #6b8f71;
+  background-color: #6b8f71;
+  color: white;
 }
 
 /* Announcement Bar */
@@ -135,6 +136,7 @@ nav a.cart {
   letter-spacing: 0.5px;
 }
 
+/* Menu Section */
 .menu-section {
   background: #fef8f2;
   padding: 4rem 2rem;
@@ -282,4 +284,25 @@ nav a.cart {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 0.85rem;
   margin-top: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-card {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  .hero-image-square {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
 }
