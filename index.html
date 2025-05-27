@@ -37,74 +37,129 @@
     <p>Бранч по выходным &nbsp; | &nbsp; Суббота 9:00 – 14:00</p>
   </div>
 
-  <section class="menu-section" id="menu">
-    <div class="menu-header">
-      <h2>Наше Меню</h2>
-      <p>Попробуйте наши свежие блюда, приготовленные с любовью каждое утро.</p>
-    </div>
+<section class="menu-section" id="menu">
+  <div class="menu-header">
+    <h2>Наше Меню</h2>
+    <p>Попробуйте наши свежие блюда, приготовленные с любовью каждое утро.</p>
+  </div>
 
-    <div class="menu-tabs">
-      <button class="tab active" onclick="showTab('allDay')">Завтраки весь день</button>
-      <button class="tab" onclick="showTab('drinks')">Напитки</button>
-    </div>
+  <!-- Tabs -->
+  <div class="menu-tabs">
+    <button class="tab active" onclick="showTab('allDay')">Завтраки весь день</button>
+    <button class="tab" onclick="showTab('drinks')">Напитки</button>
+  </div>
 
-    <div class="menu-content">
-      <div id="allDay" class="menu-tab active">
-        <div class="menu-category">
-          <h3>Завтраки весь день</h3>
-          <div class="menu-items">
-            <div class="menu-item">
-              <h4><strong>Круассан</strong></h4>
-              <p>Слоёное французское тесто, свежеиспечённое каждое утро.</p>
-              <span>₽400</span>
-            </div>
-            <div class="menu-item">
-              <h4><strong>Пен о Шоколá</strong> (Pain au Chocolat)</h4>
-              <p>Воздушное слоёное тесто с начинкой из тёмного шоколада.</p>
-              <span>₽450</span>
-            </div>
-            <div class="menu-item">
-              <h4><strong>Сэндвич на закваске с яйцом</strong></h4>
-              <p>Хрустящий хлеб на закваске, яйцо пашот, сыр и зелень.</p>
-              <span>₽550</span>
-            </div>
-            <div class="menu-item">
-              <h4><strong>Авокадо-тост</strong></h4>
-              <p>Зрелый авокадо на поджаренном хлебе с лимоном и специями.</p>
-              <span>₽520</span>
-            </div>
-            <div class="menu-item">
-              <h4><strong>Йогурт с гранолой</strong></h4>
-              <p>Натуральный йогурт с домашней гранолой и сезонными ягодами.</p>
-              <span>₽480</span>
-            </div>
-            <div class="menu-item">
-              <h4><strong>Омлет с зеленью и сыром</strong></h4>
-              <p>Воздушный омлет со шпинатом, зеленью и нежным сыром.</p>
-              <span>₽500</span>
-            </div>
-            <div class="menu-item">
-              <h4><strong>Сырники с медом</strong></h4>
-              <p>Традиционные творожные сырники с медом и сметаной.</p>
-              <span>₽490</span>
-            </div>
-            <div class="menu-item">
-              <h4><strong>Бриошь с лососем и шпинатом</strong></h4>
-              <p>Домашняя бриошь с копченым лососем, шпинатом и соусом.</p>
-              <span>₽580</span>
-            </div>
-            <div class="menu-item">
-              <h4><strong>Шакшука</strong></h4>
-              <p>Яйца, запечённые в ароматном томатно-перечном соусе.</p>
-              <span>₽540</span>
-            </div>
+  <!-- Content -->
+  <div class="menu-content">
+    <!-- Breakfast Tab -->
+    <div id="allDay" class="menu-tab active">
+      <div class="menu-category">
+        <h3>Завтраки весь день</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h4><strong>Круассан</strong></h4>
+            <p>Слоёное французское тесто, свежеиспечённое каждое утро.</p>
+            <span>₽400</span>
+          </div>
+          <div class="menu-item">
+            <h4><strong>Пен о Шоколá</strong> (Pain au Chocolat)</h4>
+            <p>Воздушное слоёное тесто с начинкой из тёмного шоколада.</p>
+            <span>₽450</span>
+          </div>
+          <div class="menu-item">
+            <h4><strong>Сэндвич на закваске с яйцом</strong></h4>
+            <p>Хрустящий хлеб на закваске, яйцо пашот, сыр и зелень.</p>
+            <span>₽550</span>
+          </div>
+          <div class="menu-item">
+            <h4><strong>Авокадо-тост</strong></h4>
+            <p>Зрелый авокадо на поджаренном хлебе с лимоном и специями.</p>
+            <span>₽520</span>
+          </div>
+          <div class="menu-item">
+            <h4><strong>Йогурт с гранолой</strong></h4>
+            <p>Натуральный йогурт с домашней гранолой и сезонными ягодами.</p>
+            <span>₽480</span>
+          </div>
+          <div class="menu-item">
+            <h4><strong>Омлет с зеленью и сыром</strong></h4>
+            <p>Воздушный омлет со шпинатом, зеленью и нежным сыром.</p>
+            <span>₽500</span>
+          </div>
+          <div class="menu-item">
+            <h4><strong>Сырники с медом</strong></h4>
+            <p>Традиционные творожные сырники с медом и сметаной.</p>
+            <span>₽490</span>
+          </div>
+          <div class="menu-item">
+            <h4><strong>Бриошь с лососем и шпинатом</strong></h4>
+            <p>Домашняя бриошь с копченым лососем, шпинатом и соусом.</p>
+            <span>₽580</span>
+          </div>
+          <div class="menu-item">
+            <h4><strong>Шакшука</strong></h4>
+            <p>Яйца, запечённые в ароматном томатно-перечном соусе.</p>
+            <span>₽540</span>
           </div>
         </div>
       </div>
-
-      <!-- Optional: Add "drinks" tab content here -->
     </div>
-  </section>
+
+    <!-- Drinks Tab -->
+    <div id="drinks" class="menu-tab hidden">
+      <div class="menu-category">
+        <h3>Кофе</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h4><strong>Эспрессо</strong></h4>
+            <p>Насыщенный и концентрированный кофе.</p>
+            <span>₽240</span>
+          </div>
+          <div class="menu-item">
+            <h4><strong>Американо</strong></h4>
+            <p>Эспрессо с добавлением горячей воды.</p>
+            <span>₽280</span>
+          </div>
+          <div class="menu-item">
+            <h4><strong>Латте</strong></h4>
+            <p>Эспрессо с молоком и лёгкой пенкой.</p>
+            <span>₽320</span>
+          </div>
+          <div class="menu-item">
+            <h4><strong>Капучино</strong></h4>
+            <p>Равные части эспрессо, молока и пены.</p>
+            <span>₽320</span>
+          </div>
+          <div class="menu-item">
+            <h4><strong>Флэт Уайт</strong></h4>
+            <p>Меньше пены, больше вкуса — нежный молочный кофе.</p>
+            <span>₽360</span>
+          </div>
+        </div>
+
+        <h3 style="margin-top: 3rem;">Авторские напитки</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h4><strong>Чай Латте</strong></h4>
+            <p>Пряный чай с парным молоком.</p>
+            <span>₽480</span>
+          </div>
+          <div class="menu-item">
+            <h4><strong>Матча Латте</strong></h4>
+            <p>Японский зелёный чай в сочетании с молоком.</p>
+            <span>₽480</span>
+          </div>
+          <div class="menu-item">
+            <h4><strong>Золотой Латте</strong></h4>
+            <p>Куркума, специи и парное молоко — без кофеина.</p>
+            <span>₽520</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <script src="script.js"></script>
   <footer class="footer">
