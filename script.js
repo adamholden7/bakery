@@ -5,10 +5,13 @@ function showTab(tabName) {
     tab.classList.remove("active");
   });
 
-  document.getElementById(tabName).classList.remove("hidden");
-  document.getElementById(tabName).classList.add("active");
+  const activeTab = document.getElementById(tabName);
+  activeTab.classList.remove("hidden");
+  activeTab.classList.add("active");
 
   const buttons = document.querySelectorAll(".menu-tabs .tab");
   buttons.forEach(btn => btn.classList.remove("active"));
+
+  // Mark the clicked button as active
   event.target.classList.add("active");
 }
