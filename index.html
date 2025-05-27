@@ -1,110 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Sweet Crumbs Bakery</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Пекарня Sweet Crumbs</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <div class="nav-container">
-      <div class="logo">
-        <img src="images/cookie.png" alt="Logo" />
-        <span>Sweet Crumbs</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="order.html">Order Online</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <header class="hero-banner">
-    <div class="hero-overlay">
-      <div class="hero-content">
-        <h1>Welcome to Sweet Crumbs</h1>
-        <p>Where every batch is made with love and our buns are as THICCCCC as Adam's cheeks</p>
-      </div>
-    </div>
+  <header class="topbar">
+    <div class="logo">Sweet <span>Crumbs</span></div>
+    <nav>
+      <a href="#">Главная</a>
+      <a href="#">О Нас</a>
+      <a href="#">Меню</a>
+      <a href="#">Заказать Онлайн</a>
+      <a href="#">Контакты</a>
+      <a href="#" class="user"><span>👤</span> Войти</a>
+      <a href="#" class="cart">Корзина (0)</a>
+    </nav>
   </header>
 
-  <!-- Scroll-down cue -->
-  <a href="#featured" class="scroll-down">↓ Scroll</a>
-
-  <section id="featured" class="fade-in">
-    <h2>Our Featured Treats</h2>
-
-    <div class="featured-wrapper">
-      <div class="featured-left">
-        <!-- Treat categories -->
-        <div class="treat-category">
-          <h3>Cookies</h3>
-          <div class="grid">
-            <div class="item">
-              <h4>Chocolate Chip Cookies</h4>
-              <p>Freshly baked daily with rich Belgian chocolate.</p>
-            </div>
-            <div class="item">
-              <h4>Oatmeal Raisin Cookies</h4>
-              <p>Classic and chewy with plump raisins and a hint of cinnamon.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="treat-category">
-          <h3>Muffins</h3>
-          <div class="grid">
-            <div class="item">
-              <h4>Blueberry Muffins</h4>
-              <p>Bursts of fresh blueberries in every bite.</p>
-            </div>
-            <div class="item">
-              <h4>Banana Nut Muffins</h4>
-              <p>Moist banana muffins with crunchy walnuts.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="treat-category">
-          <h3>Breads</h3>
-          <div class="grid">
-            <div class="item">
-              <h4>Classic Sourdough</h4>
-              <p>Artisan-style sourdough with a crisp crust.</p>
-            </div>
-            <div class="item">
-              <h4>Zucchini Bread</h4>
-              <p>Soft, spiced, and just sweet enough.</p>
-            </div>
-          </div>
-        </div>
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <p class="subtitle">Пекарня и Кафе с 2025 года</p>
+      <h1>Ваше любимое место<br>для свежей выпечки и кофе</h1>
+      <div class="hero-buttons">
+        <a href="#" class="btn">Заказать Онлайн</a>
+        <a href="#" class="btn outline">Наше Меню</a>
       </div>
-
-      <aside class="news-panel">
-        <h3>Bakery News</h3>
-        <ul>
-          <li><strong>June 8:</strong> Free Cookie Friday 🍪</li>
-          <li><strong>June 12:</strong> Muffin Making Workshop</li>
-          <li><strong>Now Available:</strong> Gluten-Free Lemon Loaf</li>
-          <li><strong>Coming Soon:</strong> Local Farmer's Market Stand</li>
-        </ul>
-      </aside>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Sweet Crumbs Bakery</p>
-  </footer>
+  <div class="announcement-bar">
+    <p>Бранч по выходным &nbsp; | &nbsp; Суббота 9:00 – 14:00</p>
+  </div>
+
+  <section class="menu-section" id="menu">
+    <div class="menu-header">
+      <h2>Наше Меню</h2>
+      <p>Попробуйте наши свежие блюда, приготовленные с любовью каждое утро.</p>
+    </div>
+
+    <div class="menu-tabs">
+      <button class="tab active" onclick="showTab('allDay')">Завтраки весь день</button>
+      <button class="tab" onclick="showTab('drinks')">Напитки</button>
+    </div>
+
+    <div class="menu-content">
+      <div id="allDay" class="menu-tab active">
+        <div class="menu-category">
+          <h3>Завтраки весь день</h3>
+          <div class="menu-items">
+            <div class="menu-item">
+              <h4><strong>Круассан</strong></h4>
+              <p>Слоёное французское тесто, свежеиспечённое каждое утро.</p>
+              <span>₽400</span>
+            </div>
+            <div class="menu-item">
+              <h4><strong>Пен о Шоколá</strong> (Pain au Chocolat)</h4>
+              <p>Воздушное слоёное тесто с начинкой из тёмного шоколада.</p>
+              <span>₽450</span>
+            </div>
+            <div class="menu-item">
+              <h4><strong>Сэндвич на закваске с яйцом</strong></h4>
+              <p>Хрустящий хлеб на закваске, яйцо пашот, сыр и зелень.</p>
+              <span>₽550</span>
+            </div>
+            <div class="menu-item">
+              <h4><strong>Авокадо-тост</strong></h4>
+              <p>Зрелый авокадо на поджаренном хлебе с лимоном и специями.</p>
+              <span>₽520</span>
+            </div>
+            <div class="menu-item">
+              <h4><strong>Йогурт с гранолой</strong></h4>
+              <p>Натуральный йогурт с домашней гранолой и сезонными ягодами.</p>
+              <span>₽480</span>
+            </div>
+            <div class="menu-item">
+              <h4><strong>Омлет с зеленью и сыром</strong></h4>
+              <p>Воздушный омлет со шпинатом, зеленью и нежным сыром.</p>
+              <span>₽500</span>
+            </div>
+            <div class="menu-item">
+              <h4><strong>Сырники с медом</strong></h4>
+              <p>Традиционные творожные сырники с медом и сметаной.</p>
+              <span>₽490</span>
+            </div>
+            <div class="menu-item">
+              <h4><strong>Бриошь с лососем и шпинатом</strong></h4>
+              <p>Домашняя бриошь с копченым лососем, шпинатом и соусом.</p>
+              <span>₽580</span>
+            </div>
+            <div class="menu-item">
+              <h4><strong>Шакшука</strong></h4>
+              <p>Яйца, запечённые в ароматном томатно-перечном соусе.</p>
+              <span>₽540</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Optional: Add "drinks" tab content here -->
+    </div>
+  </section>
 
   <script src="script.js"></script>
-  <script>
-    // Scroll shadow effect
-    window.addEventListener("scroll", function () {
-      document.body.classList.toggle("scrolled", window.scrollY > 10);
-    });
-  </script>
 </body>
 </html>
