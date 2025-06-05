@@ -1,16 +1,18 @@
-/* Base Reset */
+/* Базовый сброс отступов и модели коробки */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Стили для body: шрифт, цвет текста, фон */
 body {
   font-family: 'Playfair Display', serif;
   background-color: #fefefc;
   color: #3b3b3b;
 }
 
-/* Header Navigation */
+/* Шапка сайта (навигационная панель) */
 .topbar {
   background: #f8ecdd;
   padding: 1rem 2rem;
@@ -20,27 +22,35 @@ body {
   position: relative;
   z-index: 2;
 }
+
+/* Логотип */
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
   color: #3e3b2e;
 }
+
+/* Цветовая часть логотипа */
 .logo span {
   color: #6b8f71;
   font-weight: 500;
 }
+
+/* Ссылки навигации */
 nav a {
   margin-left: 1.5rem;
   text-decoration: none;
   font-size: 0.95rem;
   color: #3e3b2e;
 }
+
+/* Дополнительные стили для ссылок пользователя или корзины */
 nav a.user,
 nav a.cart {
   font-weight: 500;
 }
 
-/* Hero Section */
+/* Секция Hero (баннер на всю высоту экрана) */
 .hero {
   position: relative;
   height: 100vh;
@@ -55,6 +65,8 @@ nav a.cart {
   background-repeat: no-repeat;
   color: white;
 }
+
+/* Затемняющий слой поверх изображения */
 .overlay {
   position: absolute;
   top: 0;
@@ -64,27 +76,37 @@ nav a.cart {
   background: rgba(0,0,0,0.3);
   z-index: 1;
 }
+
+/* Контейнер с текстом в hero-секции */
 .hero-text {
   position: relative;
   z-index: 2;
   max-width: 600px;
   color: #fff;
 }
+
+/* Подзаголовок */
 .hero-text .subtitle {
   font-size: 1rem;
   margin-bottom: 1rem;
   opacity: 0.8;
 }
+
+/* Главный заголовок */
 .hero-text h1 {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 2rem;
 }
+
+/* Контейнер кнопок в hero-секции */
 .hero-buttons {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
+
+/* Основной стиль кнопок */
 .btn {
   background-color: #6b8f71;
   color: white;
@@ -94,20 +116,26 @@ nav a.cart {
   font-size: 1rem;
   transition: all 0.3s ease;
 }
+
+/* Кнопка с прозрачным фоном и обводкой */
 .btn.outline {
   background: transparent;
   border: 2px solid white;
   color: white;
 }
+
+/* Эффект при наведении на обычную кнопку */
 .btn:hover {
   background-color: #587a5f;
 }
+
+/* Эффект при наведении на outline-кнопку */
 .btn.outline:hover {
   background-color: white;
   color: #6b8f71;
 }
 
-/* Announcement Bar */
+/* Объявление (информационная панель под баннером) */
 .announcement-bar {
   background: #5e6952;
   color: white;
@@ -117,15 +145,20 @@ nav a.cart {
   letter-spacing: 0.5px;
 }
 
+/* Секция с меню */
 .menu-section {
   background: #fef8f2;
   padding: 4rem 2rem;
   text-align: center;
 }
+
+/* Заголовок меню */
 .menu-header h2 {
   font-size: 2.8rem;
   color: #3e3b2e;
 }
+
+/* Подзаголовок меню */
 .menu-header p {
   font-size: 1rem;
   color: #6e6e6e;
@@ -133,12 +166,15 @@ nav a.cart {
   margin-bottom: 2rem;
 }
 
+/* Контейнер табов (переключателей) */
 .menu-tabs {
   display: flex;
   justify-content: center;
   gap: 2rem;
   margin-bottom: 2rem;
 }
+
+/* Кнопки табов */
 .menu-tabs .tab {
   background: none;
   border: none;
@@ -149,6 +185,8 @@ nav a.cart {
   position: relative;
   color: #3e3b2e;
 }
+
+/* Активный таб: подчеркивание снизу */
 .menu-tabs .tab.active::after {
   content: "";
   position: absolute;
@@ -159,15 +197,20 @@ nav a.cart {
   left: 0;
 }
 
+/* Контейнер с контентом вкладки меню */
 .menu-content {
   max-width: 1000px;
   margin: 0 auto;
   text-align: left;
 }
+
+/* Заголовки категорий в меню */
 .menu-category h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
+
+/* Список пунктов меню */
 .menu-items {
   display: flex;
   gap: 2rem;
@@ -175,18 +218,26 @@ nav a.cart {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+/* Индивидуальный пункт меню */
 .menu-item {
   width: 30%;
   min-width: 250px;
 }
+
+/* Название блюда */
 .menu-item h4 {
   font-size: 1.1rem;
   margin-bottom: 0.3rem;
 }
+
+/* Описание блюда */
 .menu-item p {
   font-size: 0.9rem;
   color: #666;
 }
+
+/* Цена блюда */
 .menu-item span {
   font-size: 0.9rem;
   display: inline-block;
@@ -195,17 +246,20 @@ nav a.cart {
   color: #3e3b2e;
 }
 
+/* Класс для скрытых элементов (например, скрытая вкладка) */
 .hidden {
   display: none;
 }
 
-/* Footer */
+/* Подвал сайта */
 .footer {
   background-color: #3e4936;
   color: white;
   padding: 4rem 2rem 2rem;
   font-size: 0.95rem;
 }
+
+/* Контейнер в подвале: рассылка и контакты */
 .footer-container {
   display: flex;
   flex-wrap: wrap;
@@ -214,22 +268,31 @@ nav a.cart {
   margin: auto;
   gap: 2rem;
 }
+
+/* Заголовки в футере */
 .footer h3 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
+
+/* Абзацы текста в футере */
 .footer p {
   margin-bottom: 1rem;
   line-height: 1.5;
 }
 
+/* Форма подписки на рассылку */
 .newsletter-form {
   display: flex;
   flex-direction: column;
 }
+
+/* Метка поля формы */
 .newsletter-form label {
   margin-bottom: 0.5rem;
 }
+
+/* Поле ввода email */
 .newsletter-form input[type="email"] {
   padding: 0.8rem;
   margin-bottom: 1rem;
@@ -237,14 +300,20 @@ nav a.cart {
   border-radius: 6px;
   font-family: 'Playfair Display', serif;
 }
+
+/* Группа чекбокса (согласие на рассылку) */
 .checkbox-group {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
 }
+
+/* Сам чекбокс */
 .checkbox-group input[type="checkbox"] {
   margin-right: 0.5rem;
 }
+
+/* Кнопка отправки формы */
 .newsletter-form button {
   padding: 0.7rem 1.5rem;
   border: 1px solid white;
@@ -255,11 +324,14 @@ nav a.cart {
   border-radius: 5px;
   transition: 0.3s ease;
 }
+
+/* Эффект при наведении на кнопку */
 .newsletter-form button:hover {
   background-color: white;
   color: #3e4936;
 }
 
+/* Нижняя часть подвала (копирайт) */
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
